@@ -1,8 +1,8 @@
 <!--
 "A Little Bit of Everything" 版：自我介绍 + 项目 + 技术栈 + GitHub 统计 + 社交入口。
-仓库已建：https://github.com/RadiantForever/RadiantForever
+仓库：https://github.com/RadiantForever/RadiantForever
 
-唯一待补：博客/知乎/个人站，有的话加到「🌏 Elsewhere」一节。
+以后有博客/知乎，直接加到「🌏 Elsewhere」一节。
 -->
 
 <div align="center">
@@ -119,10 +119,9 @@
 
 ## 🌏 Elsewhere
 
-- 📺 **B 站** — [space.bilibili.com/475529500](https://space.bilibili.com/475529500) —— 机器人跑起来的原始录像，不做剪辑调速
-- ✍️ 把调参、踩坑和失败的实验整理成文（TODO：放博客/知乎链接）
-- 📬 开放交流：腿足 / 轮腿运动控制、RL 训策略、ROS 2 工程，欢迎邮件
+- 📺 B 站：[space.bilibili.com/475529500](https://space.bilibili.com/475529500)
+- 📬 邮箱：radiant_heart@163.com
 
 <div align="center">
-<sub>Last updated: 2026-11 · 数据均来自仓库内可复现的实验记录</sub>
+<sub>Last updated: 2026-11</sub>
 </div>
