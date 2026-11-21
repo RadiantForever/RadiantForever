@@ -21,7 +21,7 @@
 
 - 🎓 Junior, Guangdong University of Technology · 广东工业大学 大三本科生
 - 🎯 Aiming for motion control engineer / robot systems engineer · 目标：机器人运动控制工程师 / 机器人系统工程师
-- 📚 Currently learning ROS 2 and reinforcement learning · 正在学：ROS 2、强化学习
+- 📚 Currently learning robot motion control, reinforcement learning and ROS 2 · 正在学：机器人运动控制、强化学习、ROS 2
 - 📫 [radiant_heart@163.com](mailto:radiant_heart@163.com) · [Bilibili](https://space.bilibili.com/475529500)
 
 ## 🦿 Featured work · 项目
