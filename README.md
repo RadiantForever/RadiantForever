@@ -102,6 +102,14 @@
 > ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 > ![CMake](https://img.shields.io/badge/CMake-064F8C?style=flat-square&logo=cmake&logoColor=white)
 
+## 📊 This GitHub
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=RadiantForever&show_icons=true&hide_title=true&hide_rank=true&hide_border=true&hide=commits,prs,issues,contribs&theme=transparent" alt="stars" />
+
+</div>
+
 ## 🌏 Elsewhere
 
 - 📺 B 站：[space.bilibili.com/475529500](https://space.bilibili.com/475529500)
