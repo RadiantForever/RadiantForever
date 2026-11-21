@@ -5,7 +5,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=2F81F7&center=true&vCenter=true&width=700&lines=Robotics+%C2%B7+Motion+Control+%C2%B7+ROS2;Legged+%26+wheel-legged+locomotion;Train+in+simulation%2C+run+it+on+hardware" alt="typing" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=2F81F7&center=true&vCenter=true&width=760&lines=Robotics+%C2%B7+Motion+Control+%C2%B7+Reinforcement+Learning;Legged+%26+wheel-legged+locomotion+%C2%B7+ROS+2;Train+in+simulation%2C+deploy+on+hardware" alt="typing" />
 
 # Haihong Qiu · 邱海宏
 
