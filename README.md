@@ -10,6 +10,7 @@
 # Haihong Qiu · 邱海宏
 
 [![Bilibili](https://img.shields.io/badge/Bilibili-475529500-00A1D6?style=flat-square&logo=bilibili&logoColor=white)](https://space.bilibili.com/475529500)
+[![Xiaohongshu](https://img.shields.io/badge/Xiaohongshu-FF2442?style=flat-square&logo=xiaohongshu&logoColor=white)](https://www.xiaohongshu.com/user/profile/62dbd953000000001f015c1c)
 [![Email](https://img.shields.io/badge/Email-radiant__heart@163.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:radiant_heart@163.com)
 ![Guangzhou](https://img.shields.io/badge/Guangzhou-China-6E7781?style=flat-square&logo=googlemaps&logoColor=white)
 ![Profile views](https://komarev.com/ghpvc/?username=RadiantForever&style=flat-square&color=6E7781&label=views)
@@ -115,6 +116,7 @@ Commands compose: forward + height, yaw + height, and a 2 s leg-height oscillati
 ## 🌏 Elsewhere · 其他
 
 - 📺 Bilibili · B 站：[space.bilibili.com/475529500](https://space.bilibili.com/475529500)
+- 📕 Xiaohongshu · 小红书：[62dbd953000000001f015c1c](https://www.xiaohongshu.com/user/profile/62dbd953000000001f015c1c)
 - 📬 Email · 邮箱：[radiant_heart@163.com](mailto:radiant_heart@163.com)
 
 <div align="center">
