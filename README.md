@@ -53,12 +53,10 @@
 
 ### [supermimic_wheelbipe](https://github.com/RadiantForever/supermimic_wheelbipe)
 
-**一个 6 维动作的单策略，同时控住前进速度、原地偏航和腿高 —— 轮腿机器人最难的地方是这三件事互相打架。**
+**一个 6 维动作的单策略，同时控住前进速度、原地偏航和腿高。**
 
-控制目标是复合的：加速时腿高要被压住，原地高速偏航时不能摔，变高度时速度不能崩。
-训练上没用 PPO，而是三段循环：在 Isaac Lab 里采样短指令序列 → 在 buffer 上拟合多步**可微世界模型**
-（成功与失败样本都保留）→ 在想象 rollout 中用 **BPTT** 同时优化 actor 与 critic，并周期性刷新 buffer。
-选这条路的原因很实际：**同样的算力预算下，想让策略更快见到更多样的指令组合**。
+训练不用 PPO，而是三段循环：在 Isaac Lab 里采样短指令序列 → 在 buffer 上拟合多步**可微世界模型**
+→ 在想象 rollout 中用 **BPTT** 同时优化 actor 与 critic，并周期性刷新 buffer。
 
 | | |
 |---|---|
@@ -69,10 +67,6 @@
 | **4096 envs** | 单卡 RTX 4090，5570 env-step/s，17.8 GB |
 
 指令可组合：前进 + 变腿、偏航 + 变腿、零速下腿高按 2 s 周期往复。
-
-> **已知限制也写在仓库里**：顶速未达 2–3 m/s 目标；PhysX `replicate_physics=True` 下无法逐 env 随机化摩擦；
-> 无 URDF 故无 IK；teacher 信号只混入前 800 轮且缺少「完全不给 teacher」的对照，
-> 所以**不声称**「不用老师也能到这个水平」。
 
 [![Code](https://img.shields.io/badge/Code-%E2%86%97-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/RadiantForever/supermimic_wheelbipe)
 [![Video](https://img.shields.io/badge/2s%20demo-Bilibili-00A1D6?style=flat-square&logo=bilibili&logoColor=white)](https://www.bilibili.com/video/BV1haxM6CEGm/)
