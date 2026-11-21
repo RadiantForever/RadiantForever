@@ -27,28 +27,31 @@
 
 ## 🦿 Featured work
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/RadiantForever/supermimic_wheelbipe/main/docs/gifs/fwd_leg_vx15.gif" alt="wheel-legged robot driving forward at 1.5 m/s while changing leg height" width="760">
-</p>
-<p align="center">
-  <sub><b>Forward 1.5 m/s + leg-height change, one policy.</b> 2.0 s of real-time simulation, no cuts, no speed-up.</sub>
-</p>
-
 <table align="center">
   <tr>
     <td align="center" width="50%">
-      <img src="https://raw.githubusercontent.com/RadiantForever/supermimic_wheelbipe/main/docs/gifs/spin_wz10.gif" width="360" alt="in-place yaw at 10 rad/s"><br>
-      <sub><b>In-place yaw</b> · 10.21 rad/s · 1.6 rev/s</sub>
+      <img src="https://raw.githubusercontent.com/RadiantForever/supermimic_wheelbipe/main/docs/gifs/spin_leg_wz10.gif" width="380" alt="in-place yaw at 10 rad/s while changing leg height"><br>
+      <sub><b>原地偏航 + 变腿</b> · 10 rad/s · 8 cm</sub>
     </td>
     <td align="center" width="50%">
-      <img src="https://raw.githubusercontent.com/RadiantForever/supermimic_wheelbipe/main/docs/gifs/leg_static.gif" width="360" alt="leg height sweeping 0.20 to 0.28 m"><br>
-      <sub><b>Leg height</b> · 0.20 – 0.28 m · 8 cm travel</sub>
+      <img src="https://raw.githubusercontent.com/RadiantForever/supermimic_wheelbipe/main/docs/gifs/fwd_leg_vx15.gif" width="380" alt="forward 1.5 m/s while changing leg height"><br>
+      <sub><b>前进 + 变腿</b> · 1.5 m/s</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="https://raw.githubusercontent.com/RadiantForever/supermimic_wheelbipe/main/docs/gifs/spin_wz10.gif" width="380" alt="in-place yaw at 10 rad/s"><br>
+      <sub><b>原地偏航</b> · 10.21 rad/s</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="https://raw.githubusercontent.com/RadiantForever/supermimic_wheelbipe/main/docs/gifs/leg_static.gif" width="380" alt="leg height sweeping 0.20 to 0.28 m"><br>
+      <sub><b>变腿高</b> · 0.20 – 0.28 m</sub>
     </td>
   </tr>
 </table>
 
 <p align="center">
-  <sub>All clips: same checkpoint <code>wb_final</code> · <a href="https://github.com/RadiantForever/supermimic_wheelbipe/blob/main/docs/gifs/spin_leg_wz10.gif">one more: yaw + height at the same time</a></sub>
+  <sub>四段均来自同一检查点 <code>wb_final</code></sub>
 </p>
 
 ### [supermimic_wheelbipe](https://github.com/RadiantForever/supermimic_wheelbipe)
