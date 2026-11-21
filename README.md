@@ -80,6 +80,7 @@
 
 > **Robotics & learning**
 >
+> ![ROS 1](https://img.shields.io/badge/ROS%201-22314E?style=flat-square&logo=ros&logoColor=white)
 > ![ROS 2](https://img.shields.io/badge/ROS%202-22314E?style=flat-square&logo=ros&logoColor=white)
 > ![Isaac Lab](https://img.shields.io/badge/Isaac%20Lab-76B900?style=flat-square&logo=nvidia&logoColor=white)
 > ![Isaac Sim](https://img.shields.io/badge/Isaac%20Sim-76B900?style=flat-square&logo=nvidia&logoColor=white)
@@ -99,15 +100,6 @@
 > ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 > ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 > ![CMake](https://img.shields.io/badge/CMake-064F8C?style=flat-square&logo=cmake&logoColor=white)
-
-## 📊 This GitHub
-
-<div align="center">
-
-<img height="150" src="https://github-readme-stats.vercel.app/api?username=RadiantForever&show_icons=true&hide_title=true&hide_rank=true&hide_border=true&include_all_commits=true&theme=transparent" alt="stats" />
-<img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RadiantForever&layout=compact&langs_count=5&hide_border=true&theme=transparent" alt="langs" />
-
-</div>
 
 ## 🌏 Elsewhere
 
