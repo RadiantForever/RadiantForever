@@ -1,8 +1,6 @@
 <!--
-"A Little Bit of Everything" 版：自我介绍 + 项目 + 技术栈 + GitHub 统计 + 社交入口。
+双语版：英文在前，中文在后，逐行对照，不重复区块结构。
 仓库：https://github.com/RadiantForever/RadiantForever
-
-以后有博客/知乎，直接加到「🌏 Elsewhere」一节。
 -->
 
 <div align="center">
@@ -18,56 +16,60 @@
 
 </div>
 
-## 🚀 About
+## 🚀 About · 关于
 
-- 🎓 广东工业大学 · 大三本科生
-- 🎯 目标：机器人运动控制工程师 / 机器人系统工程师
-- 📚 正在学：ROS 2、强化学习
-- 📫 联系方式：radiant_heart@163.com · [B 站](https://space.bilibili.com/475529500)
+- 🎓 Junior, Guangdong University of Technology · 广东工业大学 大三本科生
+- 🎯 Aiming for motion control engineer / robot systems engineer · 目标：机器人运动控制工程师 / 机器人系统工程师
+- 📚 Currently learning ROS 2 and reinforcement learning · 正在学：ROS 2、强化学习
+- 📫 [radiant_heart@163.com](mailto:radiant_heart@163.com) · [Bilibili](https://space.bilibili.com/475529500)
 
-## 🦿 Featured work
+## 🦿 Featured work · 项目
 
 <table align="center">
   <tr>
     <td align="center" width="50%">
       <img src="https://raw.githubusercontent.com/RadiantForever/supermimic_wheelbipe/main/docs/gifs/spin_leg_wz10.gif" width="380" alt="in-place yaw at 10 rad/s while changing leg height"><br>
-      <sub><b>原地偏航 + 变腿</b> · 10 rad/s · 8 cm</sub>
+      <sub><b>Yaw + leg height</b> · 偏航 + 变腿 · 10 rad/s · 8 cm</sub>
     </td>
     <td align="center" width="50%">
       <img src="https://raw.githubusercontent.com/RadiantForever/supermimic_wheelbipe/main/docs/gifs/fwd_leg_vx15.gif" width="380" alt="forward 1.5 m/s while changing leg height"><br>
-      <sub><b>前进 + 变腿</b> · 1.5 m/s</sub>
+      <sub><b>Forward + leg height</b> · 前进 + 变腿 · 1.5 m/s</sub>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
       <img src="https://raw.githubusercontent.com/RadiantForever/supermimic_wheelbipe/main/docs/gifs/spin_wz10.gif" width="380" alt="in-place yaw at 10 rad/s"><br>
-      <sub><b>原地偏航</b> · 10.21 rad/s</sub>
+      <sub><b>In-place yaw</b> · 原地偏航 · 10.21 rad/s</sub>
     </td>
     <td align="center" width="50%">
       <img src="https://raw.githubusercontent.com/RadiantForever/supermimic_wheelbipe/main/docs/gifs/leg_static.gif" width="380" alt="leg height sweeping 0.20 to 0.28 m"><br>
-      <sub><b>变腿高</b> · 0.20 – 0.28 m</sub>
+      <sub><b>Leg height</b> · 变腿高 · 0.20 – 0.28 m</sub>
     </td>
   </tr>
 </table>
 
 <p align="center">
-  <sub>四段均来自同一检查点 <code>wb_final</code></sub>
+  <sub>Four clips from one checkpoint <code>wb_final</code> · 四段均来自同一检查点</sub>
 </p>
 
 ### [supermimic_wheelbipe](https://github.com/RadiantForever/supermimic_wheelbipe)
 
+**One 6-D action policy holding forward velocity, in-place yaw and leg height at the same time.**
 **一个 6 维动作的单策略，同时控住前进速度、原地偏航和腿高。**
 
-训练不用 PPO，而是三段循环：在 Isaac Lab 里采样短指令序列 → 在 buffer 上拟合多步**可微世界模型**
-→ 在想象 rollout 中用 **BPTT** 同时优化 actor 与 critic，并周期性刷新 buffer。
+Trained without PPO, in three repeating stages: sample short command sequences in Isaac Lab → fit a multi-step differentiable world model on the buffer → optimize actor and critic by BPTT through imagined rollouts, refreshing the buffer periodically.
+
+训练不用 PPO，而是三段循环：在 Isaac Lab 里采样短指令序列 → 在 buffer 上拟合多步可微世界模型 → 在想象 rollout 中用 BPTT 同时优化 actor 与 critic，并周期性刷新 buffer。
 
 | | |
 |---|---|
-| **1.40 m/s** | 前进速度（跟踪误差 0.01） |
-| **10.21 rad/s** | 原地偏航 ≈ 1.6 圈/秒 |
-| **8 cm** | 腿高行程（0.20 – 0.28 m） |
-| **0 / 16** | 16 条指令评测摔倒次数，归一化回报 0.983 |
-| **4096 envs** | 单卡 RTX 4090，5570 env-step/s，17.8 GB |
+| **1.40 m/s** | Forward velocity · 前进速度（跟踪误差 0.01） |
+| **10.21 rad/s** | In-place yaw ≈ 1.6 rev/s · 原地偏航 |
+| **8 cm** | Leg-height travel, 0.20 – 0.28 m · 腿高行程 |
+| **0 / 16** | Falls over 16 commands, normalized return 0.983 · 16 条指令评测摔倒数 |
+| **4096 envs** | Single RTX 4090, 5570 env-step/s · 单卡训练吞吐 |
+
+Commands compose: forward + height, yaw + height, and a 2 s leg-height oscillation at zero velocity.
 
 指令可组合：前进 + 变腿、偏航 + 变腿、零速下腿高按 2 s 周期往复。
 
@@ -76,9 +78,9 @@
 [![Checkpoint](https://img.shields.io/badge/Checkpoint-27.7%20MB%20policy-2F81F7?style=flat-square&logo=github&logoColor=white)](https://github.com/RadiantForever/supermimic_wheelbipe/releases/tag/ckpt-v1)
 ![License](https://img.shields.io/badge/MIT-3DA639?style=flat-square)
 
-## 🛠 Tech stack
+## 🛠 Tech stack · 技术栈
 
-> **Robotics & learning**
+> **Robotics & learning · 机器人与学习**
 >
 > ![ROS 1](https://img.shields.io/badge/ROS%201-22314E?style=flat-square&logo=ros&logoColor=white)
 > ![ROS 2](https://img.shields.io/badge/ROS%202-22314E?style=flat-square&logo=ros&logoColor=white)
@@ -88,21 +90,21 @@
 > ![Gazebo](https://img.shields.io/badge/Gazebo-F58113?style=flat-square)
 > ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 
-> **Languages**
+> **Languages · 语言**
 >
 > ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 > ![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white)
 > ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 > ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
 
-> **Tooling**
+> **Tooling · 工具**
 >
 > ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 > ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 > ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 > ![CMake](https://img.shields.io/badge/CMake-064F8C?style=flat-square&logo=cmake&logoColor=white)
 
-## 📊 This GitHub
+## 📊 This GitHub · 数据
 
 <div align="center">
 
@@ -110,10 +112,10 @@
 
 </div>
 
-## 🌏 Elsewhere
+## 🌏 Elsewhere · 其他
 
-- 📺 B 站：[space.bilibili.com/475529500](https://space.bilibili.com/475529500)
-- 📬 邮箱：radiant_heart@163.com
+- 📺 Bilibili · B 站：[space.bilibili.com/475529500](https://space.bilibili.com/475529500)
+- 📬 Email · 邮箱：[radiant_heart@163.com](mailto:radiant_heart@163.com)
 
 <div align="center">
 <sub>Last updated: 2026-11</sub>
