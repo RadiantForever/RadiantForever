@@ -78,19 +78,14 @@
 
 ## 🛠 Tech stack
 
-> **Motion control & robotics**
+> **Robotics & learning**
 >
 > ![ROS 2](https://img.shields.io/badge/ROS%202-22314E?style=flat-square&logo=ros&logoColor=white)
 > ![Isaac Lab](https://img.shields.io/badge/Isaac%20Lab-76B900?style=flat-square&logo=nvidia&logoColor=white)
 > ![Isaac Sim](https://img.shields.io/badge/Isaac%20Sim-76B900?style=flat-square&logo=nvidia&logoColor=white)
 > ![MuJoCo](https://img.shields.io/badge/MuJoCo-1F6FEB?style=flat-square)
 > ![Gazebo](https://img.shields.io/badge/Gazebo-F58113?style=flat-square)
-
-> **Learning**
->
 > ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-> ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-> ![BPTT](https://img.shields.io/badge/backprop%20through%20time-8A2BE2?style=flat-square)
 
 > **Languages**
 >
